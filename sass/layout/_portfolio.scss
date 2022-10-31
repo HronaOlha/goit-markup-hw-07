@@ -1,0 +1,98 @@
+// РОЗБЕРИСЯ ІЗ btn-current, ЯК ВИНЕСТИ ЙОГО У _button
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.btn-current {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: $accent-color;
+  color: $main-color-light;
+}
+
+.portfolio-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-examples__item {
+  width: calc((100% - 60px) / 3);
+
+  border: 1px solid #eeeeee;
+
+  transition: box-shadow $primary-transition-time $primary-cubic-function;
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .portfolio-examples__overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.portfolio-examples__thumb {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.portfolio-examples__overlay {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(100%);
+  transition: transform $primary-transition-time $primary-cubic-function,
+    opasity $primary-transition-time $primary-cubic-function;
+
+  opacity: 0;
+
+  background-color: $overlay;
+}
+
+.portfolio-examples__overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 322px;
+  height: 168px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $main-color-light;
+}
+
+.portfolio-examples__content {
+  padding: 20px 24px;
+}
+
+.portfolio-examples__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $second-color-dark;
+}
+
+.portfolio-examples__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}

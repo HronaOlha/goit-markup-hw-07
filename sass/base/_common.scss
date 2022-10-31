@@ -1,0 +1,32 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  color: $main-text-color;
+  background-color: $main-color-light;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.66;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $second-color-dark;
+  padding-bottom: 50px;
+}
