@@ -1,24 +1,15 @@
-// ЧЕКНИ КОЛІР ЛОГО ЗАМІСТЬ BLACK
-
-.logo {
-  font-family: $logo-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: black;
-}
-
 .logo__accent {
   color: $accent-color;
 }
 
 .header__logo {
+  @extend %logo;
   margin-right: 93px;
   padding: 24px 0 25px;
 }
 
 .footer__logo {
+  @extend %logo;
   display: inline-block;
   color: $main-color-light;
   margin-bottom: 20px;
