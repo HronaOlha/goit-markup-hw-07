@@ -6,11 +6,14 @@
   @extend %logo;
   margin-right: 93px;
   padding: 24px 0 25px;
+
+  color: black;
 }
 
 .footer__logo {
   @extend %logo;
   display: inline-block;
-  color: $main-color-light;
   margin-bottom: 20px;
+
+  color: $main-color-light;
 }

@@ -1,21 +1,10 @@
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.footer__logo, .header__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
 }
 
 p,
@@ -41,6 +30,26 @@ ul {
 .link {
   text-decoration: none;
   color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 img {
@@ -76,15 +85,6 @@ body {
   padding-bottom: 50px;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: black;
-}
-
 .logo__accent {
   color: #2196f3;
 }
@@ -92,12 +92,13 @@ body {
 .header__logo {
   margin-right: 93px;
   padding: 24px 0 25px;
+  color: black;
 }
 
 .footer__logo {
   display: inline-block;
-  color: #ffffff;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .btn {
@@ -203,7 +204,7 @@ body {
   line-height: 1.16;
 }
 
-.input__wrap {
+.modal__input-wrap {
   position: relative;
 }
 
@@ -279,7 +280,7 @@ body {
   margin-left: 5px;
 }
 
-.contract__icon-wrap {
+.modal__contract-span {
   display: inline-block;
   margin: 0 8px 0 12px;
   width: 16px;
@@ -287,7 +288,7 @@ body {
   border: 2px solid #212121;
   border-radius: 2px;
 }
-.contract__icon-wrap:hover {
+.modal__contract-span:hover {
   border-color: #2196f3;
 }
 
@@ -295,7 +296,7 @@ body {
   fill: transparent;
 }
 
-.modal__contract:checked + .modal__contract-label > .contract__icon-wrap {
+.modal__contract:checked + .modal__contract-label > .modal__contract-span {
   background-color: #2196f3;
   border: none;
 }
@@ -466,7 +467,7 @@ body {
   position: relative;
 }
 
-.sevrices__description {
+.services__description {
   display: flex;
   justify-content: center;
   align-items: center;
